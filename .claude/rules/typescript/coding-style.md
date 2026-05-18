@@ -77,28 +77,6 @@ function getErrorMessage(error: unknown): string {
 }
 ```
 
-### React Props
-
-- Define component props with a named `interface` or `type`
-- Type callback props explicitly
-- Do not use `React.FC` unless there is a specific reason to do so
-
-```typescript
-interface User {
-  id: string
-  email: string
-}
-
-interface UserCardProps {
-  user: User
-  onSelect: (id: string) => void
-}
-
-function UserCard({ user, onSelect }: UserCardProps) {
-  return <button onClick={() => onSelect(user.id)}>{user.email}</button>
-}
-```
-
 ### JavaScript Files
 
 - In `.js` and `.jsx` files, use JSDoc when types improve clarity and a TypeScript migration is not practical

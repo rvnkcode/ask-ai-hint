@@ -4,6 +4,7 @@ paths:
   - "**/*.tsx"
   - "**/*.js"
   - "**/*.jsx"
+  - "**/*.svelte"
 ---
 # TypeScript/JavaScript Security
 
